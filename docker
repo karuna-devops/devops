@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean
 
 # Copy the application files to Apache's default web directory
-COPY /root/simple-website-template /var/www/html/
+COPY ./ /var/www/html/
 
 # Expose port 80 to access the application
 EXPOSE 80
